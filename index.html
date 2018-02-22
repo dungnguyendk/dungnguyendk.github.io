@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,17 +40,92 @@
                    
                 </div>
                 <div class="col-md-9">
-                    <div class="well article">
-                        <span class="post-date">
-                            07:03 ngày 20/2/18
-                        </span>
-                        <h2>
-                            ABC/BTC
-                        </h2>
-                        <div class="post-description">
-                            <div class="block">Buy 74-76</div>
-							<div class="block">Target 80-85-90-95-100</div>
-							<div class="block">Cutloss 4-5%</div>
+                    <form action="" class="channel-input" id="form-channel">
+                        <div class="type-coin row">
+                            <div class="col-md-1">
+                                <label for="">Type:</label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-type>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <select name="" id="">
+                                    <option value="" default>BTC</option>
+                                    <option value="">ETH</option>
+                                    <option value="">BNB</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buy-target row">
+                            <div class="col-md-1">
+                                <label for="">Buy: </label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-buy-1>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-buy-2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sell-target row">
+                            <div class="col-md-1">
+                                <label for="">Sell: </label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-sell-1>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-sell-2>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-sell-3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cut-loss row">
+                            <div class="col-md-1">
+                                <label for="">Cutloss: </label>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-cutloss-1>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="input-group">
+                                    <input type="text" data-cutloss-1>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn" data-submit>OK</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="list-article">
+                        <div class="well article">
+                            <span class="post-date">
+                                07:03 ngày 20/2/18
+                            </span>
+                            <h2>
+                                ABC/BTC
+                            </h2>
+                            <div class="post-description">
+                                <div class="block">Buy 74-76</div>
+    							<div class="block">Target 80-85-90-95-100</div>
+    							<div class="block">Cutloss 4-5%</div>
+                            </div>
                         </div>
                     </div>
                     <div class="pagination">
@@ -73,5 +149,19 @@
         </div>
     </div>
 </body>
+<script>
+    $(function(){
+        $("[data-submit]").on("click",(function){
+            $('input, select, textarea').each(
+                function(index){  
+                    var input = $(this);
+                    alert('Type: ' + input.attr('type') + 'Name: ' + input.attr('name') + 'Value: ' + input.val());
+                }
+            );
+        })
+        
 
+    });
+    
+</script>
 </html>

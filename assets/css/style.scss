@@ -19,3 +19,32 @@ html{height:100%}body{height:100%}.wrap{position:relative;min-height:100%}.foote
     background-repeat: no-repeat;
     background-size: cover;
 }
+.channel-input {
+	background-color: #28323C;
+	border-radius: 5px;
+	padding: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+	label {
+		color: white;
+	}
+	input {
+		text-transform: uppercase;
+		max-width: 100%;
+		padding: 0 5px;
+	}
+	.input-group {
+		margin-bottom: 10px;
+	}
+	.btn {
+		padding: 1px 0;
+		width: 100%;
+		background-color: #70a800; 
+		color: white;
+	}
+}
+
+.list-article {
+	margin-bottom: 20px;
+	overflow: hidden;
+}

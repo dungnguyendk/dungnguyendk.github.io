@@ -195,4 +195,12 @@ body { height: 100%; }
 
 .banner-parallax { background-image: url("../images/triangular.jpeg"); min-height: 350px; background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
+.channel-input { background-color: #28323C; border-radius: 5px; padding: 15px; padding-bottom: 5px; margin-bottom: 20px; }
+.channel-input label { color: white; }
+.channel-input input { text-transform: uppercase; max-width: 100%; padding: 0 5px; }
+.channel-input .input-group { margin-bottom: 10px; }
+.channel-input .btn { padding: 1px 0; width: 100%; background-color: #70a800; color: white; }
+
+.list-article { margin-bottom: 20px; overflow: hidden; }
+
 /*# sourceMappingURL=style.css.map */
