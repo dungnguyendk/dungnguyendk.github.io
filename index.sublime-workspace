@@ -1,0 +1,391 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"tr",
+				"translate"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"e",
+				"ellipsis"
+			],
+			[
+				"border",
+				"border-box"
+			],
+			[
+				"b",
+				"bold"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"cont",
+				"contentAd"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"bo",
+				"both"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"margin-",
+				"margin-left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Sheis/Solution.Beauty.Web/Beauty.Web/Content/mobile/style.scss",
+		"/D/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Mobile/Product/ProductShops.Mobile.cshtml",
+		"/D/projects FOD/Solution.Delivery/Presentation/FoodyAcademy.Web/Content/academy/css/_responsive.scss",
+		"/D/projects FOD/Solution.Delivery/Presentation/FoodyAcademy.Web/Content/academy/css/_site.scss",
+		"/D/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Product/ProductShops.cshtml",
+		"/D/projects FOD/Solution.Delivery/Presentation/FoodyAcademy.Web/Views/Desktop/FoodyAcademy/_Menu.cshtml",
+		"/D/projects FOD/Solution.Delivery/Presentation/FoodyAcademy.Web/Content/academy/css/style.css",
+		"/D/Sheis/Solution.Beauty.Web/Beauty.Web/Content/web/site.scss",
+		"/D/projects FOD/Solution.Delivery/Presentation/FoodyAcademy.Web/Content/academy/css/style.scss",
+		"/D/Sheis/Solution.Beauty.Web/Beauty.Web/Content/mobile/style.css",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/mobile/_common.scss",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/mobile/style.scss",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Mobile/Home/Search.Mobile.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/pages/incomming/index.vue",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Mobile/Home/_SearchItem.Mobile.cshtml",
+		"/D/Projects/solution.delivery/PrivateLibraries/DeliveryNow.Framework/ViewSwitcherEngine.cs",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Mobile/Product/ProductDetail.Mobile.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/web/basic.css",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/web/_common.scss",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/web/_product.scss",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Product/ProductDetail.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Home/ProductSearch.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Home/ProductCategory.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Mobile/Shared/_SearchMobilePartial.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Product/_Product.cshtml",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Content/web/_layout.scss",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/routes.js",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/pages/notification/index.vue",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/pages/profile/index.vue",
+		"/D/Projects/Sheis/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Product/ProductDetail-bk.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/pages/incomming/index.vue",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/src/app.vue",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Content/academy/css/style.css",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/Shared/_AcademyBanner.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/FoodyAcademy/Article.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/Shared/_Academy.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/Shared/_AcademyHeader.cshtml",
+		"/D/Projects/solution.delivery/Presentation/Foody.DeliveryAdmin/Views/Shipper/DeliveryManOnMap.cshtml",
+		"/D/Projects/solution.delivery/Presentation/Foody.DeliveryAdmin/Views/Shipper/DeliveryManOnMap2.cshtml",
+		"/D/Projects/solution.delivery/Presentation/Foody.DeliveryAdmin/Controllers/ShipperController.cs",
+		"/D/Projects/solution.delivery/Presentation/Foody.DeliveryAdmin/Scripts/Model/Delivery/DeliveryMan/angular.deliveryman.js",
+		"/C/Users/User/AppData/Roaming/Skype/My Skype Received Files/DeliveryManOnMap_V2.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Content/academy/script/script.js",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/FoodyAcademy/Index.cshtml",
+		"/C/Users/User/Desktop/Academy-web/content/css/style.css",
+		"/C/Users/User/Desktop/Academy-web/detail.html",
+		"/C/Users/User/Desktop/Academy-web/content/css/font/styles.css",
+		"/C/Users/User/Desktop/Academy-web/index.html",
+		"/C/Users/User/Desktop/Academy-web/content/script/script.js",
+		"/C/Users/User/Desktop/Academy-web/content/style.css",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Global.asax.cs",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/VueF7/Shared/_Root.Mobile.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/VueF7/Delivery/DeliveryDetail.Mobile.cshtml",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Scripts/webpack/config/index.js",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/DeliveryNow.Web.csproj",
+		"/D/Projects/solution.delivery/Presentation/DeliveryNow.Web/Views/Desktop/Shared/_Root.cshtml",
+		"/C/Users/User/Desktop/simplebar-2.5.1/simplebar-2.5.1/demo/stress-test.html",
+		"/C/Users/User/Desktop/simplebar-2.5.1/simplebar-2.5.1/demo/index.html",
+		"/C/Users/User/Desktop/simplebar-2.5.1/simplebar-2.5.1/demo/simplebar.js",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Shared/_Layout.cshtml",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Content/web/css/_layout.scss",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Shared/_Layout_v1.2.cshtml",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Content/web/css/_gift.scss",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Gift/Index.cshtml",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Gift/_GiftIsFeature.cshtml",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Views/Desktop/Home/Index.cshtml",
+		"/D/Beauty/Solution.Beauty.Web/Beauty.Web/Content/web/css/site.css",
+		"/D/foody/Solution.Delivery/Presentation/Gofast.Admin/Views/HrManage/Edit.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/Gofast.Admin/Content/Hr.css",
+		"/D/foody/Solution.Delivery/Presentation/Gofast.Admin/Content/Site.css",
+		"/E/project/test-react/index.js",
+		"/E/project/test-react/view/home.ejs",
+		"/E/project/first-react/public/index.html",
+		"/E/project/first-react/src/index - Copy.js",
+		"/E/project/first-react/src/index.js",
+		"/E/project/first-react/src/index.css",
+		"/D/foody/Solution.Delivery/Presentation/Gofast.Admin/Views/Partner/ModifyWorkShift.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Scripts/app/controller/merchant/merchantCtrl.js",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Views/Desktop/Express/_HistoryEditOrderModal.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Content/styles.css",
+		"/D/foody/Solution.Booking/Foody.Booking/Style/css/newsite.css",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Scripts/init.js",
+		"/D/foody/Solution.Delivery/Presentation/Gofast.Admin/Scripts/Model/HrManage/Shift/angular.core.shift.js",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Views/Desktop/Shared/_HeaderExpress.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Views/Desktop/Express/CheckOrder.cshtml",
+		"/E/soft/Sublime Text Build 3143 x64/Packages/HTML.sublime-package",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Views/Desktop/Express/History.cshtml",
+		"/D/foody/Solution.Delivery/Presentation/Foody.DeliveryAdmin/Scripts/Model/Delivery/DeliveryOrder/mv.DeliveryOrder_V3.js",
+		"/D/foody/Solution.Delivery/Presentation/ExpressNow.Web/Views/Desktop/Shared/_Header.cshtml"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 145.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
