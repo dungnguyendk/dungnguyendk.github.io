@@ -188,6 +188,10 @@ body { height: 100%; }
 
 .highlight .il { color: #099; }
 
+body { font-family: Arial; }
+
+.center { text-align: center !important; }
+
 .main-header { padding: 10px 0; margin-bottom: 15px; background-color: #1E272C; }
 
 .logo { padding-left: 5px; }
@@ -202,5 +206,12 @@ body { height: 100%; }
 .channel-input .btn { padding: 1px 0; width: 100%; background-color: #70a800; color: white; }
 
 .list-article { margin-bottom: 20px; overflow: hidden; }
+
+.login-form { background-color: #1E272C; padding: 20px 50px; margin-top: 15%; }
+.login-form .title { color: white; text-transform: capitalize; text-align: center; font-size: 18px; font-weight: normal; margin-bottom: 15px; margin-top: 15px; }
+.login-form .fas { color: #8f9394; }
+.login-form .custom-control-label { color: white; }
+
+.form-control:focus { box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); }
 
 /*# sourceMappingURL=style.css.map */
