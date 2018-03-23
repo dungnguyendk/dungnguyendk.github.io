@@ -111,9 +111,9 @@ body { font-family: 'Poppins', Arial !important; background-color: #f4f6f9 !impo
 .page-sidebar-wrapper .page-sidebar { position: fixed; top: 45px; left: 0; z-index: 100; }
 .page-sidebar-wrapper .page-sidebar .page-sidebar-menu .nav-link { text-transform: uppercase; white-space: nowrap; }
 
-.page-content-wrapper .page-bar { margin: -25px -20px 0; background-color: #ffffff !important; position: relative; padding: 10px 20px; }
+.page-content-wrapper .page-bar { margin: -25px -20px 0; background-color: #ffffff !important; position: relative; padding: 10px 20px; -webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1); box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1); }
 .page-content-wrapper .page-bar .page-title { font-size: 24px; margin: 0; }
-.page-content-wrapper .page-content { background-color: #f4f6f9 !important; }
+.page-content-wrapper .page-content { background-color: #EEF1F5 !important; }
 
 .table-wrapper { margin-top: 15px; }
 .table-wrapper .dataTables_filter label { margin-bottom: 0; }

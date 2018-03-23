@@ -25,13 +25,15 @@
 		background-color: $color-white;
 		position: relative;
 		padding: 10px 20px;
+		-webkit-box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+		box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
 		.page-title {
 			font-size: 24px;
 			margin: 0;
 		}
 	}
 	.page-content {
-		background-color: $color-gray;
+		background-color: $color-gray4;
 	}
 }
 .table-wrapper {
