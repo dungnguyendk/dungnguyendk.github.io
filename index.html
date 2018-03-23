@@ -5,151 +5,1202 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Website</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Your Website</title>
+    
+    <link rel="stylesheet" href="assets/plugin/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugin/datatables/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/plugin/datatables/datatables.bootstrap.css">
+    <link rel="stylesheet" href="assets/plugin/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="assets/script/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/plugin/datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/script/commont.js"></script>
 </head>
 
-<body>
-	<header class="main-header ">
-		<div class="container">
-			<div class="logo">
-				<img src="assets/images/logo.png">
-			</div>
-		</div>
-	</header>
-    <div class="wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 hidden-xs">
-                    <div class="sidebar well">
-                        <header class="sidebar-header" role="banner">
-                            
-                        </header>
-                        <div class="text-center">
-                            Welcome to Good Share
-                        </div>
-                    </div>
-                    <div class="sidebar well">
-                        <h1>Top Posts</h1>
-                        <ul>
-                            <li><a href="#">Welcome</a></li>
-                        </ul>
-                    </div>
-                   
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+<div class="page-wrapper">
+    <header class="page-header navbar navbar-fixed-top">
+        <div class="page-header-inner ">
+            <div class="page-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-en.svg" alt="logo" class="logo-default"> 
+                </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <span></span>
                 </div>
-                <div class="col-md-9">
-                    <form action="" class="channel-input" id="form-channel">
-                        <div class="type-coin row">
-                            <div class="col-md-1">
-                                <label for="">Type:</label>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-type>
+            </div>
+            <div class="top-menu">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="badge badge-default"> 7 </span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="external">
+                                <h3>
+                                    <span class="bold">12 pending</span> notifications</h3>
+                                <a href="page_user_profile_1.html">view all</a>
+                            </li>
+                            <li>
+                                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;">
+                                    <ul class="dropdown-menu-list scroller" style="height: 250px; overflow: hidden; width: auto;" data-handle-color="#637283"
+                                        data-initialized="1">
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">just now</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-success">
+                                                        <i class="fa fa-plus"></i>
+                                                    </span> New user registered. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">3 mins</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-danger">
+                                                        <i class="fa fa-bolt"></i>
+                                                    </span> Server #12 overloaded. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">10 mins</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-warning">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </span> Server #2 not responding. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">14 hrs</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-info">
+                                                        <i class="fa fa-bullhorn"></i>
+                                                    </span> Application error. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">2 days</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-danger">
+                                                        <i class="fa fa-bolt"></i>
+                                                    </span> Database overloaded 68%. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">3 days</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-danger">
+                                                        <i class="fa fa-bolt"></i>
+                                                    </span> A user IP blocked. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">4 days</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-warning">
+                                                        <i class="fa fa-bell-o"></i>
+                                                    </span> Storage Server #4 not responding dfdfdfd. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">5 days</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-info">
+                                                        <i class="fa fa-bullhorn"></i>
+                                                    </span> System Error. </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;">
+                                                <span class="time">9 days</span>
+                                                <span class="details">
+                                                    <span class="label label-sm label-icon label-danger">
+                                                        <i class="fa fa-bolt"></i>
+                                                    </span> Storage server failed. </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="slimScrollBar" style="background: rgb(99, 114, 131); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 121.359px;"></div>
+                                    <div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div>
                                 </div>
-                            </div>
-                            <div class="col-md-2">
-                                <select name="" id="">
-                                    <option value="" default>BTC</option>
-                                    <option value="">ETH</option>
-                                    <option value="">BNB</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="buy-target row">
-                            <div class="col-md-1">
-                                <label for="">Buy: </label>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-buy-1>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-buy-2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sell-target row">
-                            <div class="col-md-1">
-                                <label for="">Sell: </label>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-sell-1>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-sell-2>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-sell-3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cut-loss row">
-                            <div class="col-md-1">
-                                <label for="">Cutloss: </label>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-cutloss-1>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="input-group">
-                                    <input type="text" data-cutloss-1>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="button" class="btn" data-submit>OK</button>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown dropdown-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                            <img alt="" class="img-circle" src="assets/images/profile_user.jpg">
+                            <span class="username username-hide-on-mobile"> Nick </span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="page_user_profile_1.html">
+                                    <i class="icon-user"></i> My Profile </a>
+                            </li>
+                            <li>
+                                <a href="app_calendar.html">
+                                    <i class="icon-calendar"></i> My Calendar </a>
+                            </li>
+                            <li>
+                                <a href="app_inbox.html">
+                                    <i class="icon-envelope-open"></i> My Inbox
+                                    <span class="badge badge-danger"> 3 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="app_todo.html">
+                                    <i class="icon-rocket"></i> My Tasks
+                                    <span class="badge badge-success"> 7 </span>
+                                </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="page_user_lock_1.html">
+                                    <i class="icon-lock"></i> Lock Screen </a>
+                            </li>
+                            <li>
+                                <a href="page_user_login_1.html">
+                                    <i class="icon-key"></i> Log Out </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </header>
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse">
+                <ul class="page-sidebar-menu  page-header-fixed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                    <li class="nav-item start ">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-line-chart"></i>
+                            <span class="title">Thống kê</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-bookmark-o"></i>
+                            <span class="title">Theo dõi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a href="javascript:;" class="nav-link">
+                            <i class="fa fa-google-wallet"></i>
+                            <span class="title">Mua/bán</span>
+                        </a>
+                    </li>
+                </ul>
 
-                    </form>
-                    <div class="list-article">
-                        <div class="well article">
-                            <span class="post-date">
-                                07:03 ngày 20/2/18
-                            </span>
-                            <h2>
-                                ABC/BTC
-                            </h2>
-                            <div class="post-description">
-                                <div class="block">Buy 74-76</div>
-    							<div class="block">Target 80-85-90-95-100</div>
-    							<div class="block">Cutloss 4-5%</div>
-                            </div>
+            </div>
+        </div>
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="page-bar">
+                    <h1 class="page-title">Data Tables
+                    </h1>
+                </div>
+                <div class="portlet light table-wrapper">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <span class="caption-subject bold uppercase"> Managed Table</span>
                         </div>
                     </div>
-                    <div class="pagination">
-                        <span class="page_number ">Page: 1 of 1</span>
+                    <div class="portlet-body">
+                        <table class="table table-striped table-bordered table-checkable order-column" id="table_dashboard_1">
+                            <thead>
+                                <tr>
+                                    <th> Username </th>
+                                    <th> Email </th>
+                                    <th> Status </th>
+                                    <th> Joined </th>
+                                    <th> Actions </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd gradeX">
+                                    <td> shuxer </td>
+                                    <td>
+                                        <a href="mailto:shuxer@gmail.com"> shuxer@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-success"> Approved </span>
+                                    </td>
+                                    <td class="center"> 12 Jan 2012 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu pull-left" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> looper </td>
+                                    <td>
+                                        <a href="mailto:looper90@gmail.com"> looper90@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> userwow </td>
+                                    <td>
+                                        <a href="mailto:userwow@yahoo.com"> userwow@yahoo.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-success"> Approved </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> user1wow </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> userwow@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-danger"> Blocked </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> restest </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> test@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-success"> Approved </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> foopl </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-info"> Info </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> weep </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-danger"> Rejected </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> coop </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-info"> Info </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> pppol </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-danger"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> test </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> userwow </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> userwow@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> test </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> test@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> goop </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> weep </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> toopl </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> userwow </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> userwow@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> tes21t </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> test@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> fop </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> kop </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> vopl </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> userwow </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> userwow@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> wap </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> test@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> test </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> toop </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd gradeX">
+                                    <td> weep </td>
+                                    <td>
+                                        <a href="mailto:userwow@gmail.com"> good@gmail.com </a>
+                                    </td>
+                                    <td>
+                                        <span class="label label-sm label-warning"> Suspended </span>
+                                    </td>
+                                    <td class="center"> 12.12.2011 </td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button class="btn btn-xs green dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-docs"></i> New Post </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-tag"></i> New Comment </a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-user"></i> New User </a>
+                                                </li>
+                                                <li class="divider"> </li>
+                                                <li>
+                                                    <a href="javascript:;">
+                                                        <i class="icon-flag"></i> Comments
+                                                        <span class="badge badge-success">4</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p>
-                ©2017 Powered by
-                <a href="http://getbootstrap.com/">
+    </div>
+    <div class="main-footer">
+        <p>
+            ©2017 Powered by
+            <a href="http://getbootstrap.com/">
                 Bootstrap
-                </a>
-                ,
-                <a href="https://github.com/">
+            </a>
+            ,
+            <a href="https://github.com/">
                 Github
-                </a>
-              
-            </p>
+            </a>
+    
+        </p>
+        <div class="scroll-to-top">
+            <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
         </div>
     </div>
+</div>
 </body>
 <script>
     $(function(){
